@@ -2,7 +2,7 @@ import React from 'react'
 
 const Nav = () => {
   return (
-    <div className='flex align-center p-3 text-white bg-gray-800 h-12'>
+    <div className='flex align-center p-3 bg-slate-200 text-gray-800 h-12'>
         <div className='w-1/4' >
             <h1>Tolulope</h1>
         </div>
