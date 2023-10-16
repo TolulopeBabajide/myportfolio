@@ -1,4 +1,5 @@
 import React from 'react'
+import {Link} from 'react-router-dom'
 
 const Nav = () => {
   return (
@@ -7,10 +8,18 @@ const Nav = () => {
             <h1>Tolulope</h1>
         </div>
         <div  className='flex w-2/4 justify-evenly '>
-            <div className="nav">Home</div>
-            <div className="nav">Skills</div>
-            <div className="nav">Projects</div>
-            <div className="nav">Connect</div>
+            <div className="nav">
+              <Link to='/'>Home</Link> 
+            </div>
+            <div className="nav">
+              <Link to="/skills">Skills</Link>  
+            </div>
+            <div className="nav">
+              <Link to='/projects' >Projects</Link> 
+            </div>
+            <div className="nav">
+              <Link>Connect</Link>
+            </div>
         </div>
     </div>
   )
