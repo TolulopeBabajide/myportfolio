@@ -3,13 +3,15 @@
         "id": 1,
         "name": "Calculator App",
         "link" : "calculator-kappa-neon.vercel.app",
-        "image": "blob:https://vercel.com/12291e5f-5a44-478a-9e4c-85722393e3d6"
+        "image": "https://i.imgur.com/scPoCpR.png",
+        "hover": "https://i.imgur.com/RPI85BF.png"
     },
     {
         "id": 2,
         "name": "Todo App",
         "link": "todo-app-seven-pink.vercel.app",
-        "image" : "blob:https://vercel.com/d2adf86a-5d41-41e9-b9da-e85516e127a6"
+        "image" : "https://i.imgur.com/eJHZv8c.png",
+        "hover": "https://i.imgur.com/Mi9PXMt.png"
     }
     
 ]
