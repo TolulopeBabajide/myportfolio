@@ -1,8 +1,9 @@
 import React from 'react'
 import Mainpage from './Mainpage'
 import Nav from './Nav'
-import {FaHtml5, FaCss3} from 'react-icons/fa'
+import {FaHtml5, FaCss3, FaNodeJs, FaBootstrap, FaReact} from 'react-icons/fa'
 import {BiLogoJavascript} from 'react-icons/bi'
+import {SiExpress, SiMongoose, SiMongodb, SiTailwindcss, SiRedux} from 'react-icons/si'
 
 const Skills = () => {
   return (
@@ -15,31 +16,35 @@ const Skills = () => {
 
                 <div className='m-5'>
                     <h2 className="p-1 border-s-2 text-left border-s-indigo-500">Frontend Development</h2>
-                        <div className='flex justify-evenly'>
+                        <div className='flex col-4 justify-evenly'>
                             
                             <div className='flex items-center'>
                                 <FaHtml5/>
-                                <p>HTML5</p>
+                                <p className='ms-1'>HTML5</p>
                             </div>
                             <div className='flex items-center'>
                                 <FaCss3/>
-                                <p>CSS3</p>
+                                <p className='ms-1'>CSS3</p>
                             </div>
                             <div className='flex items-center'>
                                 <BiLogoJavascript/>
-                                <p>Javascript</p>
+                                <p className='ms-1'>Javascript</p>
                             </div>
                             <div className='flex items-center'>
-                                <BiLogoJavascript/>
-                                <p>React</p>
+                                <FaReact/>
+                                <p className='ms-1'>React</p>
                             </div>
                             <div className='flex items-center'>
-                                <BiLogoJavascript/>
-                                <p>Tailwind</p>
+                                <SiRedux/>
+                                <p className='ms-1'>Redux</p>
                             </div>
                             <div className='flex items-center'>
-                                <BiLogoJavascript/>
-                                <p>Bootstrap</p>
+                                <SiTailwindcss/>
+                                <p className='ms-1'>Tailwind</p>
+                            </div>
+                            <div className='flex items-center'>
+                                <FaBootstrap/>
+                                <p className='ms-1'>Bootstrap</p>
                             </div>
                         
                         </div>
@@ -52,15 +57,23 @@ const Skills = () => {
                             
                             <div className='flex items-center'>
                                 <FaHtml5/>
-                                <p>HTML5</p>
+                                <p className='ms-1'>HTML5</p>
                             </div>
                             <div className='flex items-center'>
-                                <FaCss3/>
-                                <p>Node.js</p>
+                                <FaNodeJs/>
+                                <p className='ms-1'>Node.js</p>
                             </div>
                             <div className='flex items-center'>
-                                <BiLogoJavascript/>
-                                <p>Javascript</p>
+                                <SiMongodb/>
+                                <p className='ms-1'>MongoDB</p>
+                            </div>
+                            <div className='flex items-center'>
+                                <SiMongoose/>
+                                <p className='ms-1'>Mongoose</p>
+                            </div>
+                            <div className='flex items-center'>
+                                <SiExpress/>
+                                <p className='ms-1'>Express</p>
                             </div>
                         
                         </div>
