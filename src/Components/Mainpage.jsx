@@ -11,22 +11,11 @@ const Mainpage = () => {
   return (
     <div >
         
-          <div className='w-2/4 flex justify-center drop-shadow-2xl '>
+          <div className='w-2/4 drop-shadow-2xl'>
             <img className='max-w-xl h-3/4 px-5 pt-5 bg-slate-700 ' src={myPicture} alt="my picture" />
           </div>
         
-        
-        
-        {/* <div className='h-fit md:flex justify-evenly text-white p-2 bg-slate-700'>
-          <div className='md:w-1/2 w-full'>
-            <Skills/>
-          </div>
-          <div className='md:w-1/2 w-full'>
-            <Projects projectLink={project} />
-          </div>
-          
-          
-        </div> */}
+    
     </div>
   )
 }

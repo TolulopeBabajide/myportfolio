@@ -10,7 +10,8 @@ import Home from './Components/Home'
 const App = () => {
   return (
     <div className='h-screen'>
-      <Home/>
+      {/* <Home/> */}
+      <Skills/>
     </div>
   )
 }

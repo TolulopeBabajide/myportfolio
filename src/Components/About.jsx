@@ -3,7 +3,7 @@ import React from 'react'
 const About = () => {
   return (
 
-        <div className='w-2/4 md:w-3/4 lg:w-3/4'>
+        <div className='w-2/4'>
             <h1 className='text-7xl text-slate-700' > &gt;Tolulope Babajide <span className=''>_</span> </h1>
             <h2 className='text-5xl text-slate-500'>Fullstack Software Developer</h2>
             <p className='text-slate-900'> Passionate about leveraging technology to proffer solutions to businesses and improve business development. Seeking an entry-level software developer position to apply my strong analytical and problem-solving skills gained from my background in business, as well as my current knowledge of programming languages.</p>
