@@ -6,13 +6,13 @@ import Skills from './Components/Skills'
 import Projects from './Components/Projects'
 import project from './projects.json'
 import Home from './Components/Home'
+import {Routes, Route} from 'react-router-dom'
 
 const App = () => {
   return (
-    <div className='h-screen'>
-      {/* <Home/> */}
-      <Skills/>
-    </div>
+    <Routes>
+      <Route path="/" element={<Home/>}/>
+    </Routes>
   )
 }
 
