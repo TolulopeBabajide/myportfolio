@@ -7,9 +7,9 @@ import Mainpage from './Mainpage'
 
 const Home = () => {
   return (
-    <div>
+    <div className='h-screen md:overflow-hidden  bg-slate-950 '>
         <Nav/>
-        <div className='flex p-12 md:justify-evenly lg:justify-evenly justify-between'>
+        <div className='flex p-12 justify-between'>
           <About/>
           <Mainpage/>          
         </div>

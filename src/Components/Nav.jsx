@@ -18,7 +18,7 @@ const Nav = () => {
               <Link to='/projects' >Projects</Link> 
             </div>
             <div className="nav">
-              <Link>Connect</Link>
+              <Link>Contact</Link>
             </div>
         </div>
     </div>

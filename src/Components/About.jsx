@@ -1,12 +1,14 @@
 import React from 'react'
+import 'animate.css';
+
 
 const About = () => {
   return (
 
-        <div className='w-2/4'>
-            <h1 className='text-7xl text-slate-700' > &gt;Tolulope Babajide <span className=''>_</span> </h1>
-            <h2 className='text-5xl text-slate-500'>Fullstack Software Developer</h2>
-            <p className='text-slate-900'> Passionate about leveraging technology to proffer solutions to businesses and improve business development. Seeking an entry-level software developer position to apply my strong analytical and problem-solving skills gained from my background in business, as well as my current knowledge of programming languages.</p>
+        <div className='w-2/4 '>
+            <h1 className='text-7xl my-4 text-slate-200 ' > &gt;Tolulope Babajide <span className='animate__animated animate__flash animate__infinite animate__slow'>_</span> </h1>
+            <h2 className='text-5xl my-4 text-slate-200'>Fullstack Software Developer</h2>
+            <p className='text-slate-400 py-4'> crafting digital solutions that work and inspire. Let's turn ideas into reality together.</p>
             
             
             <div className='p-4 m-4 text-white bg-slate-900'>

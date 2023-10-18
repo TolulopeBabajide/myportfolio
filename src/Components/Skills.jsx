@@ -1,95 +1,63 @@
-import React from 'react'
-import Mainpage from './Mainpage'
-import Nav from './Nav'
-import {FaHtml5, FaCss3, FaNodeJs, FaBootstrap, FaReact} from 'react-icons/fa'
-import {BiLogoJavascript} from 'react-icons/bi'
-import {SiExpress, SiMongoose, SiMongodb, SiTailwindcss, SiRedux} from 'react-icons/si'
+import React from 'react';
+import Mainpage from './Mainpage';
+import Nav from './Nav';
+import { FaHtml5, FaCss3, FaNodeJs, FaBootstrap, FaReact } from 'react-icons/fa';
+import { BiLogoJavascript } from 'react-icons/bi';
+import { SiExpress, SiMongoose, SiMongodb, SiTailwindcss, SiRedux } from 'react-icons/si';
 
 const Skills = () => {
   return (
-    <div>
-        <Nav/>
-        <div className='flex p-12 justify-between'>
-            <div className="w-1/2">
-                <h1 className='text-5xl'>I'm specialized in</h1>
-                <p className='text-3xl'> &gt; Backend Software Development </p>
+    <div className='h-screen md:overflow-hidden bg-slate-950 text-white'>
+      <Nav />
+      <div className='flex p-12 justify-between '>
+        <div className="w-1/2 ">
+          <div className='my-5'>
+            <h1 className='text-5xl'>I'm specialized in</h1>
+            <p className='text-3xl'> &gt; Backend Software Development </p>
+          </div>
 
-                <div className='m-5'>
-                    <h2 className="p-1 border-s-2 text-left border-s-indigo-500">Frontend Development</h2>
-                        <div className='flex col-4 justify-evenly'>
-                            
-                            <div className='flex items-center'>
-                                <FaHtml5/>
-                                <p className='ms-1'>HTML5</p>
-                            </div>
-                            <div className='flex items-center'>
-                                <FaCss3/>
-                                <p className='ms-1'>CSS3</p>
-                            </div>
-                            <div className='flex items-center'>
-                                <BiLogoJavascript/>
-                                <p className='ms-1'>Javascript</p>
-                            </div>
-                            <div className='flex items-center'>
-                                <FaReact/>
-                                <p className='ms-1'>React</p>
-                            </div>
-                            <div className='flex items-center'>
-                                <SiRedux/>
-                                <p className='ms-1'>Redux</p>
-                            </div>
-                            <div className='flex items-center'>
-                                <SiTailwindcss/>
-                                <p className='ms-1'>Tailwind</p>
-                            </div>
-                            <div className='flex items-center'>
-                                <FaBootstrap/>
-                                <p className='ms-1'>Bootstrap</p>
-                            </div>
-                        
-                        </div>
+          <div className='m-7'>
+            <h2 className="p-1 border-s-2 text-2xl text-left border-s-indigo-500">Frontend Development</h2>
+            <div className='flex flex-wrap justify-between'>
+              {[
+                { icon: <FaHtml5 className='text-slate-400' />, text: 'HTML5' },
+                { icon: <FaCss3 className='text-slate-400' />, text: 'CSS3' },
+                { icon: <BiLogoJavascript className='text-slate-400' />, text: 'Javascript' },
+                { icon: <FaReact className='text-slate-400' />, text: 'React' },
+                { icon: <SiRedux className='text-slate-400' />, text: 'Redux' },
+                { icon: <SiTailwindcss className='text-slate-400' />, text: 'Tailwind' },
+                { icon: <FaBootstrap className='text-slate-400' />, text: 'Bootstrap' },
+              ].map((item, index) => (
+                <div key={index} className='flex items-center mt-4 w-1/3'>
+                  {item.icon}
+                  <p className='ms-1'>{item.text}</p>
                 </div>
-
-            <hr className='m-3'/>
-                <div className='m-5'>
-                    <h2 className=" p-1 border-s-2 text-left border-s-indigo-500">Backend Development</h2>
-                        <div className='flex justify-evenly'>
-                            
-                            <div className='flex items-center'>
-                                <FaHtml5/>
-                                <p className='ms-1'>HTML5</p>
-                            </div>
-                            <div className='flex items-center'>
-                                <FaNodeJs/>
-                                <p className='ms-1'>Node.js</p>
-                            </div>
-                            <div className='flex items-center'>
-                                <SiMongodb/>
-                                <p className='ms-1'>MongoDB</p>
-                            </div>
-                            <div className='flex items-center'>
-                                <SiMongoose/>
-                                <p className='ms-1'>Mongoose</p>
-                            </div>
-                            <div className='flex items-center'>
-                                <SiExpress/>
-                                <p className='ms-1'>Express</p>
-                            </div>
-                        
-                        </div>
-                </div>
-                
-                
-                
+              ))}
             </div>
-            <Mainpage/>
-        </div>
-        
-        
+          </div>
 
-        
+          <hr className='' />
+          <div className='m-7'>
+            <h2 className=" p-1 border-s-2 text-left text-2xl border-s-indigo-500">Backend Development</h2>
+            <div className='flex flex-wrap justify-between '>
+              {[
+                { icon: <FaNodeJs className='text-slate-400' />, text: 'Node.js' },
+                { icon: <SiMongodb className='text-slate-400' />, text: 'MongoDB' },
+                { icon: <SiMongoose className='text-slate-400' />, text: 'Mongoose' },
+                { icon: <SiExpress className='text-slate-400' />, text: 'Express' },
+              ].map((item, index) => (
+                <div key={index} className='flex items-center mt-4 w-1/3'>
+                  {item.icon}
+                  <p className='ms-1'>{item.text}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+        <Mainpage />
+      </div>
     </div>
-  )
+  );
 }
 
-export default Skills
+export default Skills;
