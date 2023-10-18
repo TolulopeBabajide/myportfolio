@@ -4,6 +4,7 @@ import Nav from './Nav';
 import { FaHtml5, FaCss3, FaNodeJs, FaBootstrap, FaReact } from 'react-icons/fa';
 import { BiLogoJavascript } from 'react-icons/bi';
 import { SiExpress, SiMongoose, SiMongodb, SiTailwindcss, SiRedux } from 'react-icons/si';
+import 'animate.css';
 
 const Skills = () => {
   return (
@@ -13,11 +14,14 @@ const Skills = () => {
         <div className="w-1/2 ">
           <div className='my-5'>
             <h1 className='text-5xl'>I'm specialized in</h1>
-            <p className='text-3xl'> &gt; Backend Software Development </p>
+            <p className='text-3xl p-3'>
+                &gt; Backend Software Development 
+                <span className='animate__animated animate__flash animate__infinite animate__slowtext-3xl'> _</span>
+            </p>
           </div>
 
           <div className='m-7'>
-            <h2 className="p-1 border-s-2 text-2xl text-left border-s-indigo-500">Frontend Development</h2>
+            <h2 className="p-1 border-s-2 text-xl text-left border-s-indigo-500">Frontend Development</h2>
             <div className='flex flex-wrap justify-between'>
               {[
                 { icon: <FaHtml5 className='text-slate-400' />, text: 'HTML5' },
@@ -38,7 +42,7 @@ const Skills = () => {
 
           <hr className='' />
           <div className='m-7'>
-            <h2 className=" p-1 border-s-2 text-left text-2xl border-s-indigo-500">Backend Development</h2>
+            <h2 className=" p-1 border-s-2 text-left text-xl border-s-indigo-500">Backend Development</h2>
             <div className='flex flex-wrap justify-between '>
               {[
                 { icon: <FaNodeJs className='text-slate-400' />, text: 'Node.js' },
