@@ -4,9 +4,9 @@ import 'animate.css';
 const About = () => {
   return (
 
-        <div className='w-2/4 '>
-            <h1 className='text-7xl my-4 text-slate-200 ' > &gt;Tolulope Babajide <span className='animate__animated animate__flash animate__infinite animate__slow'>_</span> </h1>
-            <h2 className='text-5xl my-4 text-transparent bg-clip-text bg-gradient-to-r from-indigo-500 via-sky-500 to-emerald-500'>
+        <div className=''>
+            <h1 className=' text-3xl md:text-7xl my-4 text-slate-200 ' > <span className="hidden md:inline">&gt;</span>Tolulope Babajide <span className='animate__animated animate__flash animate__infinite animate__slow'>_</span> </h1>
+            <h2 className=' text-2xl md:text-5xl my-4 text-transparent bg-clip-text bg-gradient-to-r from-indigo-500 via-sky-500 to-emerald-500'>
   Fullstack Software Developer
 </h2>
             <p className='text-slate-400 py-4'> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Est, eligendi provident voluptate accusamus fugiat perferendis harum dicta itaque consectetur totam. Repudiandae, impedit consectetur in dolores molestiae nulla! Expedita, molestias tempore!</p>
