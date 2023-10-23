@@ -5,6 +5,7 @@ import { FaHtml5, FaCss3, FaNodeJs, FaBootstrap, FaReact } from 'react-icons/fa'
 import { BiLogoJavascript } from 'react-icons/bi';
 import { SiExpress, SiMongoose, SiMongodb, SiTailwindcss, SiRedux } from 'react-icons/si';
 import 'animate.css';
+import Nabar from './Nabar';
 
 const Skills = () => {
   return (
@@ -65,6 +66,9 @@ const Skills = () => {
           <Mainpage />
         </div>
         
+      </div>
+      <div className="md:hidden " >
+        <Nabar/>
       </div>
     </div>
   );

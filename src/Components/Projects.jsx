@@ -1,9 +1,10 @@
 import React, { useState } from 'react';
 import Nav from './Nav';
+import Nabar from './Nabar';
 
 const Projects =(props)=>{
     return (
-        <div>
+        <div >
             <Nav />
             <h1 className="text-center">Projects</h1>
             <p>I have transformed ideas into remarkable digital products</p>
@@ -23,6 +24,11 @@ const Projects =(props)=>{
                             </div>
                         </div>
                     ))};
+            </div>
+
+
+            <div className="md:hidden " >
+                <Nabar/>
             </div>
             
         
