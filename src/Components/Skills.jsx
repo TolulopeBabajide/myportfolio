@@ -8,12 +8,15 @@ import 'animate.css';
 
 const Skills = () => {
   return (
-    <div className='h-screen md:overflow-hidden bg-slate-950 text-white'>
-      <Nav />
-      <div className='flex p-12 justify-between '>
-        <div className="w-1/2 ">
+    <div className='h-screen  md:overflow-hidden bg-slate-950 text-white'>
+      <div className='hidden md:block' >
+        <Nav />
+      </div>
+      
+      <div className='flex p-3 md:p-12 justify-between '>
+        <div className="md:w-1/2 ">
           <div className='my-5'>
-            <h1 className='text-5xl'>I'm specialized in</h1>
+            <h1 className=' text-3xl md:text-5xl'>I'm specialized in</h1>
             <p className='text-3xl p-3'>
                 &gt; Backend Software Development 
                 <span className='animate__animated animate__flash animate__infinite animate__slowtext-3xl'> _</span>
@@ -57,8 +60,11 @@ const Skills = () => {
               ))}
             </div>
           </div>
+        </div >
+        <div className='hidden md:block' >
+          <Mainpage />
         </div>
-        <Mainpage />
+        
       </div>
     </div>
   );
